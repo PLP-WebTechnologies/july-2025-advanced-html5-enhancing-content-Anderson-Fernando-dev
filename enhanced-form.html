@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <meta name="description" content="This a Assignment: Enhancing HTML5 Content & Mastering Forms">
+    <style>
+        *{
+           margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+            font-family: Roboto, sans-serif;
+        }
+
+        nav{
+           
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e0dddd;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            color: black;
+        }
+        nav ul li{
+            padding: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            transition: color 1s ease;
+        }
+        nav ul li a:hover{
+            color: #000;
+            font-weight: 800;
+        }
+        section{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .list-content{
+            display: flex;
+            width: 90%;
+             margin: 10px;
+        }
+        .list-container-content p{
+            margin: 10px;
+            
+        }
+        .list-container-content dl dt{
+            margin: 10px;
+            font-weight: bold;
+        }
+        .list-container-content dl dd{
+            text-indent: 30px;
+        }
+        #forms form{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+         #forms form input{
+            margin: 10px;
+            padding:10px;
+            border-radius: 10px;
+            
+         }
+         #forms form input textarea{
+             margin: 10px;
+         }
+      
+         #container-table table
+         {
+            width: 60%;
+         }
+          #container-table table thead{
+            background: #e0dddd;
+          }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <!--I will use an unordered list to create a menu-->
+        <ul>
+            <li><a href="#list">List</a></li>
+            <li><a href="#forms">Contacts</a></li>
+            <li><a href="#container-table">More</a></li>
+          
+
+        </ul>
+    </nav>
+
+    <section id="list">
+        <h2>summary about lists</h2>
+        <article >
+            <h3 style="margin: 0px 10px;">Reveiw</h3>
+             
+            <div class="list-content">
+                <div class="list-container-content">
+                <p>In HTML, lists are used to organize items in a structured way.</p>
+                <p>There are three main types of lists:</p>
+                <dl>
+                    <dt>ordered list</dt>
+                    <dd>Ordered lists are used when the order of items matters. Each item is automatically numbered.</dd>
+                    <dt>unordered list</dt>
+                    <dd>Unordered lists are used when the order of items doesn’t matter. Each item is marked with a bullet point.</dd>
+                    <dt>definition list</dt>
+                    <dd>Definition lists pair terms with their descriptions.</dd>
+                </dl>
+                <P>Each type of list uses specific elements to define the items and their properties.</P>
+                
+                </div>
+                <img src="data:image/png;base64,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" alt="">
+
+            </div>
+ 
+        </article>
+
+       
+
+    </section>
+
+    <section id="forms">
+        <h4>send me your doubt</h4>
+        <form action="" method="get">
+            <input type="text" placeholder="Your name, pleases">
+            <input type="number" name="" id="" placeholder="Your age, pleases">
+            <textarea name="" id="" placeholder="Discription your doubt here...." rows="10"></textarea>
+            <fieldset>
+                <legend>Did you like the content??</legend>
+
+            <div>
+                <label for="yes">Yes</label>
+                <input type="radio" name="content" id="yes">
+            </div>
+             <div>
+                <label for="no">No</label>
+                <input type="radio" name="content" id="no">
+            </div>
+                
+            </fieldset>
+
+            <input type="button" value="Send">
+        </form>
+    </section>
+
+
+    <section id="container-table">
+        <h4>See other topics that may interest you</h4>
+        <table>
+            <thead>
+                <tr>
+                <th>topics</th>
+                <th>years</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Css</td>
+                    <td>2025</td>
+                </tr>
+
+                <tr>
+                    <td>Media query</td>
+                    <td>2025</td>
+                </tr>
+
+                <tr>
+                    <td>Iframe</td>
+                    <td>2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+</body>
+</html>
